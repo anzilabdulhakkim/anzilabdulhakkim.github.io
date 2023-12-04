@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 :root {
   --header-height: 3rem;
   --font-semi: 600;
@@ -15,11 +16,6 @@
   --mb-6: 3rem;
   --z-back: -10;
   --z-fixed: 100;
-  font-display: auto;
-  font-display: block;
-  font-display: swap;
-  font-display: fallback;
-  font-display: optional;
 }
 
 @media screen and (min-width: 968px) {
