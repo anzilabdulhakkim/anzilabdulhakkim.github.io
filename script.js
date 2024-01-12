@@ -30,11 +30,13 @@ function scrollActive(){
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active')
-        }else{
+        }
+        else{
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active')
         }
     })
 }
+
 window.addEventListener('scroll', scrollActive)
 
 const sr = ScrollReveal({
@@ -44,7 +46,38 @@ const sr = ScrollReveal({
     delay: 200,
 });
 
-sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
-sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
+function downloadResume() {
+    var driveLink = 'https://drive.google.com/file/d/1K-3QyrlAdWo8L7ImFqu2ENy6S9kHWDDf/view?usp=sharing';
+    var fileId = driveLink.match(/\/d\/(.+?)\//)[1];
+    var downloadUrl = 'https://drive.google.com/uc?id=' + fileId;
+    var link = document.createElement('a');
+    link.href = downloadUrl;
+    link.setAttribute('download', 'resume.pdf');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
+$(document).ready(function(){
+    $(".carousel").owlCarousel({
+      items: 2, 
+      loop: true,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: true,
+      nav: true,
+      dots: true,
+      responsive: {
+        0: {
+          items: 1 
+        },
+        1000: {
+          items: 2 
+        }
+    }
+    });
+});
+
+sr.reveal('.home__data, .about__img',{}); 
+sr.reveal('.home__img, .about__subtitle, .about__text',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
-sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
