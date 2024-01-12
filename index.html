@@ -7,13 +7,15 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
         <title>Portfolio</title>
     </head>
     <body>
         <header class="l-header">
             <nav class="nav bd-grid">
                 <div>
-                    <a href="#" class="nav__logo">P<span class="home__title-color">ortfolio</span></a>
+                    <a href="#" class="nav__logo">A<span class="home__title-color">NZIL</span></a>
                 </div>
 
                 <div class="nav__menu" id="nav-menu">
@@ -21,7 +23,7 @@
                         <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#Interests" class="nav__link">Interests</a></li>
+                        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
                         <li class="nav__item"><a href="#Credentials" class="nav__link">Credentials</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                     </ul>
@@ -38,6 +40,7 @@
                 <div class="home__data">
                     <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">ANZIL ABDUL HAKKIM</span><br>Frontend Developer</h1> 
                     <a href="#contact" class="button">Contact Me ></a>
+                    <a id="downloadButton" class="button" onclick="downloadResume()">Download Resume ></a>
                 </div>
 
                 <div class="home__social">
@@ -85,23 +88,11 @@
                                 <i class='bx bxl-html5 skills__icon'></i>
                                 <span class="skills__name">HTML</span>
                             </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
                         </div>
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i class='bx bxl-css3 skills__icon'></i>
                                 <span class="skills__name">CSS</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">80%</span>
                             </div>
                         </div>
                         <div class="skills__data">
@@ -109,23 +100,11 @@
                                 <i class='bx bxl-javascript skills__icon' ></i>
                                 <span class="skills__name">JAVASCRIPT</span>
                             </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">70%</span>
-                            </div>
                         </div>
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i class='bx bxl-javascript skills__icon'></i>
                                 <span class="skills__name">DOM</span>
-                            </div>
-                            <div class="skills__bar skills__dom">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">75%</span>
                             </div>
                         </div>
                         <div class="skills__data">
@@ -133,33 +112,17 @@
                                 <i class='bx bxl-github skills__icon' ></i>
                                 <span class="skills__name">Git</span>
                             </div>
-                            <div class="skills__bar skills__git">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">70%</span>
-                            </div>
                         </div>
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i><img class="img" src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt=""></i>
                                 <span class="skills__name">MySQL</span>
                             </div>
-                            <div class="skills__bar skills__mysql">
-                            </div>
-                            <div>
-                                <span class="skills__percentage">90%</span>
-                            </div>
                         </div>
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i><img class="img" src="https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/community/logos/python-logo-only.png" alt=""></i>
                                 <span class="skills__name">Python</span>
-                            </div>
-                            <div class="skills__bar skills__python">
-                            </div>
-                            <div>
-                                <span class="skills__percentage">75%</span>
                             </div>
                         </div>
                     </div>
@@ -173,86 +136,112 @@
                             <div class="skills__names">
                                 <span class="skills__name">Leadership</span>
                             </div>
-                            <div class="skills__bar skills__leadership">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
                         </div>
                         <div class="skills__data">
                             <div class="skills__names">
                                 <span class="skills__name">Teamwork</span>
-                            </div>
-                            <div class="skills__bar skills__teamwork">  
-                            </div>
-                            <div>
-                                <span class="skills__percentage">90%</span>
                             </div>
                         </div>
                         <div class="skills__data">
                             <div class="skills__names">
                                 <span class="skills__name">Collaboration</span>
                             </div>
-                            <div class="skills__bar skills__collaboration">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">92%</span>
-                            </div>
                         </div>
                         <div class="skills__data">
                             <div class="skills__names">
                                 <span class="skills__name">Problem-Solving</span>
-                            </div>
-                            <div class="skills__bar skills__problem_S">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">75%</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
             
-            <section class="skills section" id="Interests">
-                <h2 class="section-title">Interests</h2>
-                <div class="skills__container">          
-                    <div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class=' skills__icon'></i>
-                                <span class="skills__name"># Tech Meetups/Conferences</span>
+            
+    <section class="project" id="projects">
+        <div class="max-width">
+            <h2 class="title">Projects</h2>
+            <div class="carousel owl-carousel">
+
+                <div class="project-card">
+                    <div class="box" >
+                        <img src="assets/twiik-image.png" alt="barnes">
+                        <div class="project-title">Twiik website-clone</div>
+                        <p class="project-description" >Developed a seamless, multi-page structure with consistent navigation to ensure an 
+                            intuitive user experience on the Twiik website. Employed CSS to elevate the visual appeal of the web pages and
+                             implemented JavaScript for efficient user authentication and login functionality.</p>
+                            <br>
+                        <p class="project-tech-stack" >HTML | CSS | Javascript</p>
+                        <div class="repo-links">
+                            <div class="repo-div">
+                                <span><a class="project-github-link"
+                                        href="https://github.com/anzilabdulhakkim/Twiik-website"
+                                        target="_blank"> Git
+                                        Repo </a></span>
                             </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class=' skills__icon'></i>
-                                <span class="skills__name"># Open Source Contributions</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class=' skills__icon'></i>
-                                <span class="skills__name"># Continued Learning</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class=' skills__icon'></i>
-                                <span class="skills__name"># Fitness and Well-being</span>
+                            <div class="demo-div">
+                                <span><a class="project-deployed-link" href="https://website-twiik.netlify.app"
+                                        target="_blank">Go
+                                        Live
+                                    </a></span>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+                
+
+                <div class="project-card">
+                    <div class="box">
+                        <img src="assets/netflix-image.png" alt="online_bank">
+                        <div class="project-title">Netflix website-clone</div>
+                        <p class="project-description">Applied a mix of web technologies to recreate the aesthetics and functionalities of the original Netflix platform. 
+                            Introduced a dropdown feature in the Q&A section , thereby enhancing user experience through simplified
+                             access to pertinent information.</p>
+                            <br>
+                        <p class="project-tech-stack">HTML | CSS | Javascript</p>
+                        <div class="repo-links">
+                            <div class="repo-div">
+                                <span><a class="project-github-link"
+                                        href="https://github.com/anzilabdulhakkim/netflix_clone" target="_blank">
+                                        Git
+                                        Repo </a></span>
+                            </div>
+                            <div class="demo-div">
+                                <span><a class="project-deployed-link"
+                                        href="https://anzilabdulhakkim.github.io/netflix_clone" target="_blank">
+                                        Live Site
+                                    </a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <div class="box">
+                        <img src="assets/mcd-image.png" alt="bus ticket">
+                        <div class="project-title">Virtual McDonald's</div>
+                        <p class="project-description">Designed a contemporary and responsive virtual McDonald's website, 
+                            offering users an interactive platform for exploring and ordering a variety of food items. 
+                            Incorporated JavaScript promises to emulate order processing with randomized delays, adding realism 
+                            to the user experience.</p>
+                        <br>
+                        <p class="project-tech-stack">HTML | CSS | Javascript</p>
+                        <div class="repo-links">
+                            <div class="repo-div">
+                                <span><a class="project-github-link"
+                                        href="https://github.com/anzilabdulhakkim/virtual-McDonald-s" target="_blank"> Git
+                                        Repo </a></span>
+                            </div>
+                            <div class="demo-div">
+                                <span><a class="project-deployed-link"
+                                        href="https://virtual-mcdonald-s.netlify.app" target="_blank">
+                                        Live Site </a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
 
             <section class="work section" id="Credentials">
                 <h2 class="section-title">Certificates & Achievements</h2>
@@ -311,9 +300,11 @@
                 <a href="https://github.com/anzilabdulhakkim" class="footer__icon"><i class='bx bxl-github' ></i></a>
                 <a href="https://twitter.com/ANZIL135" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
             </div>
-            <div><p class="footer__copy">&#169; 2023 Anzilabdulhakkim</p></div>
+            <div><p class="footer__copy">&#169; 2024 Anzilabdulhakkim</p></div>
         </footer>
         <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
         <script src="script.js"></script>
     </body>
 </html>
