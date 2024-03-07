@@ -474,9 +474,38 @@ img {
   background: #2253c8 !important;
 }
 
-.owl-nav{
-  display: none;
+.owl-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
+
+.owl-prev,
+.owl-next {
+  font-size: 5rem !important; 
+  color: var(--first-color);
+  background-color: #fff; 
+  border: none;
+  cursor: pointer;
+}
+
+.owl-prev:hover,
+.owl-next:hover {
+  color: #fff; 
+  background-color: var(--first-color); 
+}
+
+.owl-prev {
+  margin-right: 10px;
+}
+
+.owl-next {
+  margin-left: 10px;
+}
+
 
 /* ===== CONTACT =====*/
 .contact__input {
