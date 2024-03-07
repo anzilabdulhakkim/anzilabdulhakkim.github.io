@@ -47,12 +47,12 @@ const sr = ScrollReveal({
 });
 
 function downloadResume() {
-    var driveLink = 'https://drive.google.com/file/d/1K-3QyrlAdWo8L7ImFqu2ENy6S9kHWDDf/view?usp=sharing';
+    var driveLink = 'https://drive.google.com/file/d/10I0HVBJiWatODxAc0oQW6WXsbCfu3Xpx/view?usp=sharing';
     var fileId = driveLink.match(/\/d\/(.+?)\//)[1];
     var downloadUrl = 'https://drive.google.com/uc?id=' + fileId;
     var link = document.createElement('a');
     link.href = downloadUrl;
-    link.setAttribute('download', 'resume.pdf');
+    link.setAttribute('download', 'Anzil_Abdul_Hakkim-Resume.pdf');
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
