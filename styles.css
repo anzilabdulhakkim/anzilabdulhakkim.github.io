@@ -397,6 +397,9 @@ img {
 .project-description{
   color: #fff;
 }
+.project-description {
+  text-align: justify;
+}
 
 .repo-links {
   display: flex;
@@ -424,6 +427,7 @@ img {
 
 .project-tech-stack {
   color: purple;
+  text-align: justify;
 }
 
 .demo-div a,

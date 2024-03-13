@@ -47,7 +47,7 @@ const sr = ScrollReveal({
 });
 
 function downloadResume() {
-    var driveLink = 'https://drive.google.com/file/d/10I0HVBJiWatODxAc0oQW6WXsbCfu3Xpx/view?usp=sharing';
+    var driveLink = 'https://drive.google.com/file/d/1J8Gf_rXQyN2ZoevhoMLqHyDSON6mtkHF/view?usp=sharing';
     var fileId = driveLink.match(/\/d\/(.+?)\//)[1];
     var downloadUrl = 'https://drive.google.com/uc?id=' + fileId;
     var link = document.createElement('a');
