@@ -183,8 +183,7 @@ img {
 .home {
   position: relative;
   row-gap: 5rem;
-  padding: 4rem 0 5rem;
-  margin-top: 3rem;
+  padding: 4rem 0 4rem;
 }
 
 .home__data {
@@ -589,6 +588,9 @@ img {
   .project{
     width: 100%;
     margin: auto;
+  }
+  .skills__container{
+    padding: 2px;
   }
 }
 
