@@ -414,6 +414,7 @@ img {
   border: 1px solid white;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
 }
 
 .demo-div {
@@ -422,6 +423,12 @@ img {
   border: 1px solid white;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
+}
+
+.repo-div:hover,.demo-div:hover{
+  background-color: black;
+  
 }
 
 .project-tech-stack {

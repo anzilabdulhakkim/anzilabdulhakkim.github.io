@@ -50,12 +50,13 @@ function downloadResume() {
     var driveLink = 'https://drive.google.com/file/d/1J8Gf_rXQyN2ZoevhoMLqHyDSON6mtkHF/view?usp=sharing';
     var fileId = driveLink.match(/\/d\/(.+?)\//)[1];
     var downloadUrl = 'https://drive.google.com/uc?id=' + fileId;
-    var link = document.createElement('a');
-    link.href = downloadUrl;
-    link.setAttribute('download', 'Anzil_Abdul_Hakkim-Resume.pdf');
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    var downloadLink = document.createElement('a');
+    downloadLink.href = downloadUrl;
+    downloadLink.setAttribute('download', 'Anzil_Abdul_Hakkim-Resume.pdf');
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+    window.open(driveLink, '_blank');
 }
 
 $(document).ready(function(){
