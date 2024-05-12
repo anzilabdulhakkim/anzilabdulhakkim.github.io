@@ -79,6 +79,27 @@ $(document).ready(function(){
     });
 });
 
+function animateTextTransition(element, newText) {
+    var interval = 150; 
+    var text = '';
+    var currentIndex = 0;
+
+    function animate() {
+        if (currentIndex === newText.length) {
+            currentIndex = 0; 
+        }
+        text = newText.slice(0, currentIndex + 1);
+        element.textContent = text;
+        currentIndex++;
+    }
+
+    var timer = setInterval(animate, interval);
+}
+
+var roleElement = document.getElementById('role');
+animateTextTransition(roleElement, 'Full Stack Web Developer');
+
+
 sr.reveal('.home__data, .about__img',{}); 
 sr.reveal('.home__img, .about__subtitle, .about__text',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
